@@ -1,0 +1,71 @@
+html {
+  font-family: "Baloo";
+}
+
+body {
+  background: rgba(216, 150, 8, 0.37);
+}
+.header {
+  position: relative;
+  width: 100%;
+  font-size: 65px;
+  text-align: center;
+  font-family: "Lato";
+  font-weight: bolder;
+  background-color: rgba(255, 91, 91, 0.534);
+  margin: 0;
+  padding: 20px;
+}
+.loaded-div {
+  overflow: hidden;
+  text-align: center;
+  font-size: 50px;
+  padding: 20px 0 20px 0;
+}
+.loaded-div input {
+  text-align: center;
+  width: 90%;
+  height: 100px;
+  border-radius: 20px;
+  font-size: 40px;
+  padding: 20px;
+  font-weight: bold;
+}
+.unloaded-div {
+  overflow: hidden;
+  text-align: center;
+  font-size: 50px;
+}
+.unloaded-div input {
+  text-align: center;
+  width: 90%;
+  height: 100px;
+  border-radius: 20px;
+  font-size: 40px;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.result-div {
+  overflow: hidden;
+  width: 90%;
+  height: 100px;
+  text-align: center;
+  margin-left: 90px;
+}
+.result-div label {
+  width: 90%;
+  height: 100px;
+  font-size: 40px;
+  text-align: center;
+}
+button {
+  width: 90%;
+  height: 100px;
+  text-align: center;
+  margin-left: 100px;
+  font-size: 40px;
+  font-family: "Baloo";
+  margin-top: 20px;
+  border-radius: 20px;
+}

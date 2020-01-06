@@ -3,87 +3,28 @@
   <head>
     <meta charset="utf-8" />
     <title></title>
-
-    <style>
-      #container {
-        position: relative;
-        min-height: 100vh;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-      }
-      footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 2.5em;
-      }
-      #content-wrap {
-        padding-bottom: 2.5em;
-      }
-      ::placeholder {
-        color: black;
-      }
-      header {
-        width: 100%;
-        text-align: center;
-        font-family: fantasy;
-        font-size: 3em;
-        background: rgb(209, 122, 122);
-        border: 2px solid black;
-      }
-      #content-wrap {
-        text-align: center;
-        background: rgb(212, 212, 162);
-        grid-column: 1 / span 3;
-        grid-row: 1 / span 3;
-      }
-      input {
-        display: inline-block;
-        grid-column: 1 / span 3;
-        grid-row: 1;
-        padding: 2.5em;
-        margin: 2.5em;
-        font-size: 2em;
-        color: black;
-        background: rgb(209, 122, 122);
-        border: 2px solid black;
-        text-align: center;
-        box-shadow: 2px 4px 5px black;
-        border-radius: 10px;
-      }
-      label {
-        display: block;
-        border: 2px solid black;
-        background: rgb(209, 122, 122);
-        border-radius: 10px;
-        box-shadow: 2px 4px 5px black;
-        padding: 2.5em;
-        margin: 2.5em;
-        font-size: 2em;
-      }
-    </style>
+    <script src="app.js"></script>
   </head>
   <body>
-    <header>Pounds To Tons Convertor</header>
-    <script src="app.js"></script>
-    <div>
-      input loaded pounds
+    <div class="header">Pounds To Tons Convertor</div>
+    <link rel="stylesheet" href="styles.css" />
+    <div class="loaded-div">
+      Input loaded pounds
       <input type="number" id="loaded" placeholder="Loaded Weight" />
       <!-- input field for inital loaded weight-->
     </div>
-    <div>
-      input unloaded pounds
+    <div class="unloaded-div">
+      Input unloaded pounds
       <input type="number" id="unloaded" placeholder="Unloaded Weight" />
       <!-- input field for inital unloaded weight-->
     </div>
-    <div>
+    <button type="submit" id="button" onclick="calc()">
+      Convert
+    </button>
+    <div class="result-div">
       <label type="number" id="result"></label>
       <!--To display your final results-->
     </div>
-    <button type="submit" id="button" onclick="calc()">
-      Click or Press Enter to Convert
-    </button>
     <!-- button :)-->
   </body>
 </html>
